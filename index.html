@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
   <title>Languedo</title>
 </head>
 <body>
-
+<main>
   <!-- Navbar -->
   <nav>
     <div class="logo">Meu Logo</div>
     <ul class="nav-links">
-      <li><a href="#">Log In</a></li>
-      <li><a href="#">Sign Up</a></li>
+            <li id="loginLi">
+                <a href="form.html">Log In</a>
+            </li>
+            <li id="signupLi">
+                <a href="form.html">Sign Up</a>
+            </li>
     </ul>
   </nav>
 
@@ -24,21 +29,15 @@
             <h1>Explorez la richesse des langues en apprenant à partir de contenus captivants que vous aimez</h1>
             <h3>Associant textes stimulants et audios authentiques pour une expérience d'apprentissage immersive et plaisante.</h3>
         </header>
-<main>
+
         <section class="bts">
-            <button class="content">Venez apprendre</button>
+            <a href="form.html"><button class="content">Venez découvrir </button></a>
         </section>
-        <section class="image-grid">
-            <!-- Image grid with 4 pictures -->
-            <div class="grid-item"><img src="./assets/culture.webp" alt="Image 1">Culture</div>
-            <div class="grid-item"><img src="./assets/podcast.jpg" alt="Image 2">Podcast</div>
-            <div class="grid-item"><img src="./assets/travel.jpg" alt="Image 3">Travel</div>
-            <div class="grid-item"><img src="./assets/sport.png" alt="Image 4"></div>
-        </section>
+        
     </div>
   </section>
-</main>
 
+</main>
   <!-- Footer -->
   <footer>
     <p>&copy; 2023 Languedo Site. All rights reserved.</p>
