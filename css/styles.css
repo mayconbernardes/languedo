@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdc7c7;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #1cac90;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    box-shadow: 0px 11px 12px -2px rgba(0, 0, 0, 0.26);
+}
+
+nav a {
+    cursor: pointer;
+}
+
+.logo img {
+    width:150px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    color: #141313;
+}
+
+h1{
+    font-size: 2em;
+    margin: 20px;
+    padding: 5%;
+    color: #1f287d;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+h2,h3{
+    color: #1f287d;
+    margin: 50px; 
+}
+
+
+/* Style pour les button login  */
+
+a.login {
+    color: #fff;
+    font-size: 1rem;
+
+}
+#themeSelector {
+    width: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+   
+}
+/* Pour les lien Culture, podcast, sport et travel */
+a {
+    display: inline;
+    color: rgb(249, 249, 17);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* colour du button a de la page index */
+a.btt{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 20px;  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+section.bts  {
+    padding: 160px;
+    text-align: center;  
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Presentation */
+/* Mobile-first */
+.grid-container {
+    display: grid;
+    aspect-ratio: 1 / 1;
+}
+                        
+figcaption{
+    cursor: pointer;
+}
+
+.grid-item figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-item figcaption {
+    z-index: 2;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+   
+}
+
+.grid-item img {
+    padding: 30px;
+    text-align: center;
+    height: 70%;
+    width: 70%;
+    filter: drop-shadow(1px 1px 10px #1cac8f65);
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+}
+
+
+
+@media only screen and (min-width: 425px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1,h3{
+        margin:0px;
+        color: #1f287d;
+        
+    }
+    h3{
+        text-align: center;
+        margin-bottom:15px;
+    }
+    a {font-size: 1rem;
+       color: rgb(255 255 0);
+        font-size: 80px;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    h2{
+        margin:0px;
+        color: #1f287d;
+
+    }
+}
