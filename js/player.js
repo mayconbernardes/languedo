@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const themeSelector = document.getElementById('themeSelector');
-    const contentDiv = document.getElementById('content');
-
     const textData = {
         theme1: {
             text: `
@@ -59,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 Milton: So, we've got a new neighbour from China who thinks I might be a burglar, but she seems nice and I think she quite liked me.
                 And now I want to hear all your news. How's life in Florida? Give my love to Henry. 
                 And tell Alfredo to text me sometime. Lots of love, Milton.
-            </pre>`,
+                </pre>`,
             audio: "./assets/home.mp3",
         },
         theme2: {
@@ -75,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
             audio: "audio/theme4.mp3"
         }
     };
-    
+
+    const themeSelector = document.getElementById('themeSelector');
+    const contentDiv = document.getElementById('content');
 
     // Add event listener to theme selector
     themeSelector.addEventListener('change', function () {
@@ -107,5 +106,4 @@ document.addEventListener('DOMContentLoaded', function () {
         pTag.appendChild(audioElement);
         contentDiv.innerHTML = '';
         contentDiv.appendChild(pTag);
-    }
-});
+    }});

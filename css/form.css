@@ -51,21 +51,26 @@ h1{
 
 form {
     display: flex;
+    margin: 1px;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     padding: 25px;
     border-radius: 8px;
-    backdrop-filter: blur(8px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
-
+#myform
+{
+    
+    backdrop-filter: blur(8px);
+}
 label {
     padding: 10px;
     margin-right: 200px;
     margin-bottom: 10px;
     color: #fff;
-   
+  
 }
 
 

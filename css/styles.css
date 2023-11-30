@@ -13,6 +13,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: scroll;
 }
 
 /* Navbar Styles */
@@ -144,8 +145,6 @@ footer {
     width: 100%;
 }
 
-
-
 .grid-container {
     display: grid;
     aspect-ratio: 1 / 1;
@@ -153,6 +152,10 @@ footer {
                         
 figcaption{
     cursor: pointer;
+    font-size: 100%;
+}
+figure img{
+    margin: 10px;
 }
 
 .grid-item figure {
@@ -171,12 +174,13 @@ figcaption{
 }
 
 .grid-item img {
-    padding: 30px;
+    margin-top: 10px;
+    padding: 10px;
     text-align: center;
     height: 70%;
     width: 70%;
-    filter: drop-shadow(1px 1px 10px #1cac8f65);
-    border-radius: 10px;
+    filter: drop-shadow(1px 1px 10px rgba(223, 255, 128, 0.396));
+    margin-bottom: 50px;
     aspect-ratio: 1 / 1;
 }
 
@@ -188,8 +192,7 @@ figcaption{
     }
     h1,h3{
         margin:0px;
-        color: #1f287d;
-        
+        color: #1f287d;  
     }
     h3{
         text-align: center;
@@ -203,13 +206,13 @@ figcaption{
         text-decoration: none;
     }
     nav {
-        background-color: #1cac77;}
+        background-color: #1c23ac;}
 
     h2{
         margin:0px;
         color: #1f287d;
-
     }
+    
 }
 
 /* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
