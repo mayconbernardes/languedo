@@ -39,3 +39,8 @@ document.getElementsByClassName('grid-item').addEventListener('click', function 
     // Redirect to the main.html page when the button is clicked
     window.location.href = 'main.html';
 });
+
+document.getElementById('menu-toggle').addEventListener('change', function () {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show', this.checked);
+});
