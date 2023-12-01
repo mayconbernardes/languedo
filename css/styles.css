@@ -81,6 +81,13 @@ h1{
     text-align: center;
     font-family: 'Poppins', sans-serif; 
 }
+h3 {
+    background-color: #14140112;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 20px 10px;
+}
 
 /* Styles pour les titres de niveau 2 et 3 */
 h2,h3.h3t{
@@ -90,6 +97,11 @@ h2,h3.h3t{
     color: #ffffff;
     margin: 20px 10px; 
 }
+.contact-container .contacth2{
+    color:#fff;
+    background-color: #1c23ac;
+}
+
 
 /* Styles pour les liens "login" */
 a.login {
@@ -172,9 +184,10 @@ footer {
 }
 
 /* Styles pour les légendes */
-figcaption{
+figure figcaption{
+    
     cursor: pointer;
-    font-size: 100%;
+    font-size:30px;
 }
 
 /* Styles pour les images dans les figures */
@@ -194,9 +207,10 @@ figure img{
 .grid-item figcaption {
     z-index: 2;
     position: absolute;
-    backdrop-filter: blur(4px);
-    padding: 10px;
+    padding: 0px;
+    border-radius: 8px;
 }
+
 
 /* Styles pour les images des éléments de la grille de conteneurs */
 .grid-item img {
@@ -307,13 +321,18 @@ form button:hover {
     .contact-container {
         border-radius: 10px;
         padding: 20px;
-        margin: 1% 25%;
+        margin-top: 15%;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         }
-
-
         
+    figure figcaption{
+        cursor: pointer;
+        font-size:60px;
+    }
+
+
+
 /* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
 /* Styles pour les tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -336,6 +355,10 @@ form button:hover {
 
     a {
         font-size: 1.2rem; 
+    }
+    figure figcaption{
+        cursor: pointer;
+        font-size:30px;
     }
 }
 }
