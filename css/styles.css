@@ -1,63 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@500&display=swap');
-
 /* -------------------------------------------------------------Mobile-first----------------------------------------------------------------------- */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Styles pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #cdc7c7;
     height: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-image: url('../assets/bgcolor.jpeg');
     overflow-y: scroll;
 }
 
-/* Navbar Styles */
+/* Styles pour la section de présentation */
+.presentation{
+    position: relative;
+    margin: 10px auto;
+    top: 10px;
+    bottom: 10px;
+}
+
+/* Styles pour la barre de navigation */
 nav {
     background-color:#1c23ac;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: stretch;
+    align-items: stretch; /* Cette ligne semble redondante */
     box-shadow: 0px 11px 12px -2px rgba(0, 0, 0, 0.26);
 }
 
+/* Styles pour les liens de la barre de navigation */
 nav a {
     cursor: pointer;
 }
 
+/* Styles pour le logo dans la barre de navigation */
 .logo img {
     width:150px;
     margin: 0;
     padding: 0;
-
 }
 
+/* Styles pour les liens de la barre de navigation */
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
+/* Styles pour les éléments de la liste de liens de la barre de navigation */
 .nav-links li {
     margin-right: 30px;
 }
 
+/* Styles pour les liens de la liste de liens de la barre de navigation */
 .nav-links a {
     text-decoration: none;
     color: #ffffff;
 }
 
+/* Styles pour l'en-tête */
 header {
     text-align: center;
     color: #141313;
 }
 
+/* Styles pour le titre de niveau 1 */
 h1{
     font-size: 2em;
     margin: 20px;
@@ -65,31 +79,34 @@ h1{
     color: #1f287d;
     backdrop-filter: blur(4px);
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    
-}
-h2,h3{
-    color: #1f287d;
-    margin: 50px; 
+    font-family: 'Poppins', sans-serif; 
 }
 
+/* Styles pour les titres de niveau 2 et 3 */
+h2,h3.h3t{
+    background-color:#14140112;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 20px 10px; 
+}
 
-/* Style pour les button login  */
-
+/* Styles pour les liens "login" */
 a.login {
     color: #fff;
     font-size: 1rem;
-
 }
+
+/* Styles pour le sélecteur de thème */
 #themeSelector {
     width: 50%;
     font-size: 1rem;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-   
 }
-/* Pour les lien Culture, podcast, sport et travel */
+
+/* Styles pour les liens "Culture, podcast, sport et travel" */
 a {
     display: inline;
     color: rgb(249, 249, 17);
@@ -98,23 +115,25 @@ a {
     font-size: 15px;
     text-decoration: none;
 }
-/* colour du button a de la page index */
+
+/* Styles pour le bouton "a" de la page index */
 a.btt{
     background-color: #1c23ac;
     color:rgb(255, 255, 255);
     padding: 10px;
     border-radius: 8px;
-
-
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+/* Styles pour la section "bts" */
 section.bts  {
     padding: 160px;
     text-align: center; 
     padding: 20px;
     text-align: center;
-     
 }
 
+/* Styles pour le contenu */
 .content {
     display: flex;
     justify-content: center;
@@ -125,6 +144,7 @@ section.bts  {
     margin: 0 auto;
 }
 
+/* Styles pour les boutons */
 button {
     padding: 10px;
     background-color: #3498db;
@@ -133,7 +153,7 @@ button {
     cursor: pointer;
 }
 
-/* Footer Styles */
+/* Styles pour le pied de page */
 footer {
     background-color: #333;
     color: #fff;
@@ -145,19 +165,24 @@ footer {
     width: 100%;
 }
 
+/* Styles pour la grille de conteneurs */
 .grid-container {
     display: grid;
     aspect-ratio: 1 / 1;
 }
-                        
+
+/* Styles pour les légendes */
 figcaption{
     cursor: pointer;
     font-size: 100%;
 }
+
+/* Styles pour les images dans les figures */
 figure img{
     margin: 10px;
 }
 
+/* Styles pour les éléments de la grille de conteneurs */
 .grid-item figure {
     display: flex;
     align-items: center;
@@ -165,83 +190,152 @@ figure img{
     position: relative;
 }
 
+/* Styles pour les légendes des éléments de la grille de conteneurs */
 .grid-item figcaption {
     z-index: 2;
     position: absolute;
     backdrop-filter: blur(4px);
     padding: 10px;
-   
 }
 
+/* Styles pour les images des éléments de la grille de conteneurs */
 .grid-item img {
     margin-top: 10px;
     padding: 10px;
     text-align: center;
     height: 70%;
     width: 70%;
+    border-radius: 50%;
     filter: drop-shadow(1px 1px 10px rgba(223, 255, 128, 0.396));
     margin-bottom: 50px;
     aspect-ratio: 1 / 1;
 }
 
+/* Styles pour le conteneur "about" */
+.about-container {
+    color: #fff;
+    background-color:#14140112;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10%;
+    text-align: center;
+}
 
-/* -------------------------------------------------------------Desktop----------------------------------------------------------------------- */
-@media only screen and (min-width: 425px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    h1,h3{
-        margin:0px;
-        color: #1f287d;  
-    }
-    h3{
-        text-align: center;
-        margin-bottom:15px;
-    }
-    a {font-size: 1rem;
-       color: rgb(255 255 0);
-        font-size: 80px;
-        text-transform: uppercase;
-        font-size: 13px;
-        text-decoration: none;
-    }
-    nav {
-        background-color: #1c23ac;}
+/* Styles pour le conteneur "contact" */
+.contact-container {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 4% 10%;
+    text-align: center;
+}
 
-    h2{
-        margin:0px;
-        color: #1f287d;
-    }
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
     
 }
 
-/* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
-/* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        font-size: 16px; /* Adjust the base font size for tablets */
-    }
+/* Styles pour les libellés du formulaire */
+label{
+    text-align: left;
+}
 
-    nav {
-        padding: 10px 20px; /* Adjust padding for tablets */
-    }
+/* Styles pour les libellés du formulaire */
+form label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
 
+/* Styles pour les champs de saisie du formulaire */
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Styles pour le bouton du formulaire */
+form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Styles pour le survol du bouton du formulaire */
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------------------------------------------------------Desktop----------------------------------------------------------------------- */
+/* Styles pour les écrans de bureau */
+@media only screen and (min-width: 425px) {
+    /* Styles spécifiques aux écrans de largeur minimale 425px */
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid columns for tablets */
-    }
-
-    h1 {
-        font-size: 2.5em; /* Adjust heading font size for tablets */
-    }
-
-    h2, h3 {
-        font-size: 1.8em; /* Adjust heading font size for tablets */
+    grid-template-columns: repeat(2, 1fr);
     }
 
     a {
-        font-size: 1.2rem; /* Adjust link font size for tablets */
+    font-size: 1rem;
+    color: rgb(255 255 0);
+    font-size: 80px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    }
+    h3{
+    background-color: #14140112;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 20px 10px;
     }
 
-    /* Add more tablet-specific styles as needed */
-}
+    nav {
+        background-color: #1c23ac;
+        
+    }
+    .contact-container {
+        border-radius: 10px;
+        padding: 20px;
+        margin: 1% 25%;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
 
+
+        
+/* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
+/* Styles pour les tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles spécifiques aux tablettes (largeur minimale 768px et largeur maximale 1023px) */
+    body {
+        font-size: 16px; 
+    }
+
+    nav {
+        padding: 10px 20px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    a {
+        font-size: 1.2rem; 
+    }
+}
+}

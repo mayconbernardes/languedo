@@ -12,39 +12,64 @@
   <title>Languedo</title>
 </head>
 <body>
-<main>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
-    <ul class="nav-links">
-            <li id="loginLi">
-                <a href="form.html">Log In</a>
-            </li>
-            <li id="signupLi">
-                <a href="form.html">Sign Up</a>
-            </li>
-    </ul>
-  </nav>
+  <main>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+      <ul class="nav-links">
+        <li id="loginLi">
+          <a href="form.html">Login</a>
+        </li>
+        <li id="signupLi">
+          <a href="form.html">SingUp</a>
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Presentation Section -->
-  <section class="presentation">
-    <div class="mobile-container">
+    <!-- Section de présentation -->
+    <section class="presentation">
+      <div class="mobile-container">
         <header>
-            <h1>Explorez la richesse des langues en apprenant à partir de contenus captivants que vous aimez</h1>
-            <section class="bts"><a class="btt" href="form.html">Venez découvrir</a> </section>
-            <h3>Associant textes stimulants et audios authentiques pour une expérience d'apprentissage immersive et plaisante.</h3>
+          <h1>Explorez la richesse des langues en apprenant à partir de contenus captivants que vous aimez</h1>
+          <section class="bts"><a class="btt" href="form.html">Venez découvrir</a></section>
+          <h3 class="h3t">Associant textes stimulants et audios authentiques pour une expérience d'apprentissage immersive et plaisante.</h3>
+         
         </header>
+      </div>
+    </section>
+    <h2>Contactez-nous</h2>
+                <!-- Section "Contact" -->
+                <div class="contact-container">
+                  
+                  
+                  <form action="https://formspree.io/f/mzblyqwq"
+                  method="POST">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
 
-        
-       </section>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                  </form>
+                </div> 
+
+    <!-- Section "À propos de nous" -->
+<section>
+  
+    <div class="about-container">
+      <h2>À propos de nous</h2>
+      <p>Nous sommes dédiés à fournir une manière amusante et facile à chacun d'apprendre les langues à travers la transcription de texte et l'audio. Rejoignez-nous dans cette aventure d'apprentissage des langues !</p>
     </div>
-  </section>
+</section>
+  </main>
 
-</main>
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Languedo Site. All rights reserved.</p>
+  <footer class="footer">
+    <p>&copy; 2023 Site Languedo. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>

@@ -7,32 +7,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/player.css">
   <script src="./js/script.js" defer></script>
   <script src="./js/player.js" defer></script>
     <title>Languedo</title>
 </head>
 <body>
-<main>   
-    <nav>
-        <div class="logo"><a href="main.html"> <img src="./assets/logo.png" alt="logo"></a></div>
-        <ul class="logo">
-        <a href="main.html"><i class="fa-solid fa-house" style="color: #ffffff;font-size: 35px;"></i></a>
-        </ul>
-      </nav>
-    <header>
-        <h1>Sélectionnez un thème</h1>
-        <select id="themeSelector">
-            <option value="">-- choose --</option>
-            <option value="theme1">Culture</option>
-            <option value="theme2">Travel</option>
-            <option value="theme3">Podcast</option>
-            <option value="theme4">Sport</option>
-            <!-- adicionar mais se preciso -->git
-        </select>
-    </header>
-   <div id="content"></div>
-   
- </main>
+
+        
+  <div id="container">
+    <label for="mediaSelector">Escolha uma opção:</label>
+    <select id="mediaSelector">
+      <option value="choose" selected>---choose---</option>
+      <option value="theme1">Theme 1</option>
+      <option value="theme2">Theme 2</option>
+      <option value="theme3">Theme 3</option>
+      <option value="theme4">Theme 4</option>
+      <option value="theme5">Theme 5</option>
+      <option value="theme6">Theme 6</option>
+    </select>
+    
+    <div id="media-container" style="display: none;">
+      <audio controls id="audioPlayer">
+        <source src="" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <div id="textContainer"></div>
+    </div>
+  </div>
+
+
+
 </body>
 </html>

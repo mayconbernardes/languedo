@@ -1,111 +1,85 @@
+/* Style pour le corps de la page */
 body {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 0; 
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-size: cover;
     background-position: center;
     background-image: url('../assets/bgcolor.jpeg');
     overflow: hidden;
 }
 
-nav {
-    background-color:#1c23ac;
+/* Style pour la barre de navigation */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1c23ac;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: stretch;
     box-shadow: 0px 11px 12px -2px rgba(0, 0, 0, 0.26);
 }
 
-nav a {
-    cursor: pointer;
-}
+/* Style pour le logo */
 
-.logo img {
-    width:150px;
-    margin: 0;
-    padding: 0;
 
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.nav-links li {
-    margin-right: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
+/* Style pour les titres */
+h1 {
     color: #ffffff;
+    backdrop-filter: blur(10px);
 }
 
-h1{
-    color:#ffffff;
-    backdrop-filter: blur(10px);
+/* Style pour le formulaire */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 form {
     display: flex;
-    margin: 1px;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Adjust as needed */
+    width: 100%;
 }
-#myform
-{
-    
-    backdrop-filter: blur(8px);
-}
+
+/* Style pour les étiquettes des champs du formulaire */
 label {
     padding: 10px;
-    margin-right: 200px;
     margin-bottom: 10px;
     color: #fff;
-  
+    text-align: left;
+    width: 100%;
 }
 
-
+/* Style pour les champs de saisie */
 input {
     padding: 8px;
     margin-bottom: 15px;
-    width:250px;
+    width: 100%;
     border-radius: 6px;
 }
 
+/* Style pour le bouton du formulaire */
 button {
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
-    width: 250px;
+    width: 100%;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
+/* Style pour le survol du bouton du formulaire */
 button:hover {
     background-color: #0056b3;
 }
-
-
-@media only screen and (max-width: 425px) {
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-
-    }
-
- }
