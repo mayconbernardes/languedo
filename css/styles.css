@@ -297,7 +297,6 @@ form button:hover {
     .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
     }
     .grid-item{
         padding: 0;
@@ -342,7 +341,13 @@ form button:hover {
         font-size:30px;
     }
 
-
+    .qr{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
 
 /* -------------------------------------------------------------Tablet----------------------------------------------------------------------- */
 /* Styles pour les tablettes */
