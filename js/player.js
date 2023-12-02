@@ -1,29 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var selector = document.getElementById("mediaSelector");
-    var audioPlayer = document.getElementById("audioPlayer");
-    var textContainer = document.getElementById("textContainer");
-    var mediaContainer = document.getElementById("media-container");
-  
-    selector.addEventListener("change", function() {
-      if (selector.value === "choose") {
-        mediaContainer.style.display = "none";
-      } else {
-        mediaContainer.style.display = "block";
-  
-        var selectedTheme = textData[selector.value];
-  
-        audioPlayer.src = selectedTheme.audio;
-        textContainer.innerHTML = selectedTheme.text;
-      }
-    });
-  });
-  
-  const textData = {
-      theme1: {
-          text: `
+const themeSelect = document.getElementById('themeSelect');
+const textDisplay = document.getElementById('textDisplay');
+const audioPlayer = document.getElementById('audioPlayer');
+
+themeSelect.addEventListener('change', (e) => {
+  const selectedTheme = e.target.value;
+  textDisplay.innerHTML = textData[selectedTheme].text;
+  audioPlayer.src = textData[selectedTheme].audio;
+});
+
+const textData = {
+        theme1: {
+            text: `
               <pre>
+              <p>
               Milton: Hi, Mum. I'm sorry I haven't written for a while, but your baby boy is still alive so you can stop worrying.
-              It's all OK here. Benedita and Paulo are away, so I'm alone in the flat. The problem is now I have to remember my keys when I go out.
+              It's all OK here.
+              Benedita and Paulo are away, so I'm alone in the flat. The problem is now I have to remember my keys when I go out.
               I got home yesterday, no keys, so I'm standing there in the hall like an idiot when ... 
               Mei: Hello. 
               Milton: Hello. 
@@ -75,28 +67,30 @@ document.addEventListener("DOMContentLoaded", function() {
               Milton: So, we've got a new neighbour from China who thinks I might be a burglar, but she seems nice and I think she quite liked me.
               And now I want to hear all your news. How's life in Florida? Give my love to Henry. 
               And tell Alfredo to text me sometime. Lots of love, Milton.
+              </p>
               </pre>`,
-          audio: "./assets/home.mp3",
-      },
-      theme2: {
+            audio: "./assets/home.mp3"
+          },
+        theme2: {
           text: "Your theme 2 text goes here",
           audio: "audio/theme2.mp3"
-      },
-      theme3: {
+        },
+        theme3: {
           text: "Your theme 3 text goes here",
           audio: "audio/theme3.mp3"
-      },
-      theme4: {
+        },
+        theme4: {
           text: "Your theme 4 text goes here",
           audio: "audio/theme4.mp3"
-      },
-      theme5: {
+        },
+        theme5: {
           text: "Your theme 5 text goes here",
           audio: "audio/theme5.mp3"
-      },
-      theme6: {
+        },
+        theme6: {
           text: "Your theme 6 text goes here",
           audio: "audio/theme6.mp3"
-      }
-  };
-  
+        }
+      };
+      
+     

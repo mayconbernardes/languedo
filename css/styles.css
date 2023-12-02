@@ -12,9 +12,10 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url('../assets/bgcolor.jpeg');
+    background: radial-gradient(circle, rgba(57,178,205,1) 0%, rgba(252,175,70,1) 100%);
     overflow-y: scroll;
 }
+
 
 /* Styles pour la section de présentation */
 .presentation{
@@ -26,7 +27,6 @@ body {
 
 /* Styles pour la barre de navigation */
 nav {
-    background-color:#1c23ac;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,6 @@ h1{
     font-family: 'Poppins', sans-serif; 
 }
 h3 {
-    background-color: #14140112;
     text-align: center;
     border-radius: 8px;
     color: #ffffff;
@@ -91,7 +90,6 @@ h3 {
 
 /* Styles pour les titres de niveau 2 et 3 */
 h2,h3.h3t{
-    background-color:#14140112;
     text-align: center;
     border-radius: 8px;
     color: #ffffff;
@@ -130,7 +128,6 @@ a {
 
 /* Styles pour le bouton "a" de la page index */
 a.btt{
-    background-color: #1c23ac;
     color:rgb(255, 255, 255);
     padding: 10px;
     border-radius: 8px;
@@ -185,7 +182,6 @@ footer {
 
 /* Styles pour les légendes */
 figure figcaption{
-    
     cursor: pointer;
     font-size:30px;
 }
@@ -203,6 +199,10 @@ figure img{
     position: relative;
 }
 
+figcaption
+{
+    backdrop-filter: blur(6px);
+}
 /* Styles pour les légendes des éléments de la grille de conteneurs */
 .grid-item figcaption {
     z-index: 2;
@@ -219,7 +219,6 @@ figure img{
     text-align: center;
     height: 70%;
     width: 70%;
-    border-radius: 50%;
     filter: drop-shadow(1px 1px 10px rgba(223, 255, 128, 0.396));
     margin-bottom: 50px;
     aspect-ratio: 1 / 1;
@@ -228,7 +227,6 @@ figure img{
 /* Styles pour le conteneur "about" */
 .about-container {
     color: #fff;
-    background-color:#14140112;
     border-radius: 10px;
     padding: 20px;
     margin: 10%;
@@ -307,7 +305,6 @@ form button:hover {
     text-decoration: none;
     }
     h3{
-    background-color: #14140112;
     text-align: center;
     border-radius: 8px;
     color: #ffffff;

@@ -2,10 +2,18 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+  
+    overflow: hidden;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
     background-size: cover;
     background-position: center;
-    background-image: url('../assets/bgcolor.jpeg');
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 /* Style pour la barre de navigation */

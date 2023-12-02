@@ -8,35 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/player.css">
-  <script src="./js/script.js" defer></script>
   <script src="./js/player.js" defer></script>
     <title>Languedo</title>
 </head>
 <body>
-
-        
-  <div id="container">
-    <label for="mediaSelector">Escolha uma opção:</label>
-    <select id="mediaSelector">
-      <option value="choose" selected>---choose---</option>
-      <option value="theme1">Theme 1</option>
-      <option value="theme2">Theme 2</option>
-      <option value="theme3">Theme 3</option>
-      <option value="theme4">Theme 4</option>
-      <option value="theme5">Theme 5</option>
-      <option value="theme6">Theme 6</option>
+  <div class="audio-player">
+    <select id="themeSelect">
+      <option value="">---choose---</option>
+      <option value="theme1">Expérience</option>
+      <option value="theme2">Diversité</option>
+      <option value="theme3">Connexion</option>
+      <option value="theme4">Aventure</option>
+      <option value="theme5">Exploration</option>
     </select>
-    
-    <div id="media-container" style="display: none;">
-      <audio controls id="audioPlayer">
-        <source src="" type="audio/mp3">
-        Seu navegador não suporta o elemento de áudio.
+    <div class="audio-container">
+      <audio id="audioPlayer" controls>
+        
       </audio>
-      <div id="textContainer"></div>
+      <div id="textDisplay" class="justified-text">
+        Sélectionnez votre thème
+      </div>
     </div>
   </div>
-
-
-
 </body>
 </html>
