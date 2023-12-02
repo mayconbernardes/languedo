@@ -18,12 +18,7 @@ body {
 
 
 /* Styles pour la section de présentation */
-.presentation{
-    position: relative;
-    margin: 10px auto;
-    top: 10px;
-    bottom: 10px;
-}
+
 
 /* Styles pour la barre de navigation */
 nav {
@@ -185,7 +180,18 @@ figure figcaption{
     cursor: pointer;
     font-size:30px;
 }
+/* Add the following CSS to your existing styles.css file or in the head of your HTML file */
 
+#centeredImage {
+    text-align: center;
+  }
+  
+  #centeredImage img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
 /* Styles pour les images dans les figures */
 figure img{
     margin: 10px;
@@ -214,13 +220,10 @@ figcaption
 
 /* Styles pour les images des éléments de la grille de conteneurs */
 .grid-item img {
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    height: 70%;
-    width: 70%;
+    max-width:70%;
+    height: auto;
+    border-radius: 8px;
     filter: drop-shadow(1px 1px 10px rgba(223, 255, 128, 0.396));
-    margin-bottom: 50px;
     aspect-ratio: 1 / 1;
 }
 
@@ -235,7 +238,6 @@ figcaption
 
 /* Styles pour le conteneur "contact" */
 .contact-container {
-    background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
     margin: 4% 10%;
@@ -294,6 +296,18 @@ form button:hover {
     /* Styles spécifiques aux écrans de largeur minimale 425px */
     .grid-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+    }
+    .grid-item{
+        padding: 0;
+        margin: 0;
+    }
+
+    .presentation{
+        position: relative;
+        margin: 1px auto;
+        
     }
 
     a {
@@ -325,7 +339,7 @@ form button:hover {
         
     figure figcaption{
         cursor: pointer;
-        font-size:60px;
+        font-size:30px;
     }
 
 
@@ -344,6 +358,7 @@ form button:hover {
 
     .grid-container {
         grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
     }
 
     h1 {
