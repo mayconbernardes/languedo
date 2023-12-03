@@ -71,26 +71,26 @@ const textData = {
               </pre>`,
             audio: "./assets/home.mp3"
           },
-        theme2: {
-          text: "Your theme 2 text goes here",
-          audio: "audio/theme2.mp3"
-        },
-        theme3: {
-          text: "Your theme 3 text goes here",
-          audio: "audio/theme3.mp3"
-        },
-        theme4: {
-          text: "Your theme 4 text goes here",
-          audio: "audio/theme4.mp3"
-        },
-        theme5: {
-          text: "Your theme 5 text goes here",
-          audio: "audio/theme5.mp3"
-        },
-        theme6: {
-          text: "Your theme 6 text goes here",
-          audio: "audio/theme6.mp3"
-        }
-      };
+          theme2: {
+            text: "Texte du thème 2",
+            audio: "audio/theme2.mp3"
+          },
+          theme3: {
+            text: "Texte du thème 3",
+            audio: "audio/theme3.mp3"
+          },
+          theme4: {
+            text: "Texte du thème 4",
+            audio: "audio/theme4.mp3"
+          },
+          theme5: {
+            text: "Texte du thème 5",
+            audio: "audio/theme5.mp3"
+          },
+          theme6: {
+            text: "Texte du thème 6",
+            audio: "audio/theme6.mp3"
+          }
+        }    
       
      
