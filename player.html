@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/titlelogo.png" type="image/icon">
+
   <link rel="stylesheet" href="./css/player.css">
+  
   <script src="./js/player.js" defer></script>
-    <title>Languedo</title>
+  <title>Languedo</title>
 </head>
 <body>
-<section>
-  <div class="audio-player">
-    <select id="themeSelect">
-      <option value="">---choose---</option>
-      <option value="theme1">Expérience</option>
-      <option value="theme2">Diversité</option>
-      <option value="theme3">Connexion</option>
-      <option value="theme4">Aventure</option>
-      <option value="theme5">Exploration</option>
-    </select>
-    <div class="audio-container">
-      <audio id="audioPlayer" controls>
-        
-      </audio>
-      <div id="textDisplay" class="justified-text">
-        Sélectionnez votre thème
-      </div>
+  
+  <section>
+    <div class="audio-player">
+        <h1>Exploration Linguistique</h1>
+        <h6>Profitez, Apprenez, Découvrez, Amusez-vous</h6>
+        <label for="themeSelect">Choose a theme:</label>
+        <select id="themeSelect">
+            <option value="" disabled selected hidden>--- Choose ---</option>
+            <option value="theme1">Expérience</option>
+            <option value="theme2">Diversité</option>
+            <option value="theme3">Connexion</option>
+            <option value="theme4">Aventure</option>
+            <option value="theme5">Exploration</option>
+        </select>
+        <div class="audio-container">
+            <audio id="audioPlayer" controls>
+                <!-- Add audio sources here -->
+            </audio>
+            <div id="textDisplay" class="justified-text">
+                Sélectionnez votre thème
+            </div>
+        </div>
     </div>
-  </div>
-</section>  
+</section>
+
+
 </body>
 </html>
